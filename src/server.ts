@@ -1,5 +1,5 @@
 import App from "./app";
-const app = new App();
+import AuthRouter from "./routes/auth.router";
+const app = new App([new AuthRouter()]);
 
 app.listen();
-app.useSend();
